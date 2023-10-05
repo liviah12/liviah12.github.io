@@ -1,0 +1,78 @@
+body{
+    background-image: url(QVC.jpg);
+    background-size: cover;
+    font-family: arial;
+}
+
+.container{
+    position: absolute;
+    background-color: pink;
+    
+}
+
+.horizontal, .bottom, .today, .logo{
+    position: absolute;
+    border-radius: 10px;
+}
+
+.horizontal{
+    width: 200px;
+    height: 400px;
+    top: 50px;
+    left: 50px;
+    background-color: lightgray;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.bottom{
+    width: 600px;
+    height: 110px;
+    top: 550px;
+    left: 250px;
+    background-color: lightgray;
+    font-size: 40px;
+    text-align: center;
+    line-height:.2;
+}
+
+.bottom p{
+    margin-top: 35px;
+}
+
+#small-bottom{
+    font-size: 20px;
+}
+
+
+
+/*bottom right box*/
+
+.today{
+    top:550px;
+    background-color: rgb(207, 8, 8);
+    left: 870px;
+    height: 110px;
+    width: 200px;
+}
+
+.today p{
+    color: white;
+    font-size: 20px;
+    line-height: .5;
+    text-align: center;
+}
+
+#large-today{
+    font-size: 30px;
+}
+
+.logo{
+    top: 565px;
+    left: 1200px;
+    font-size: 45px;
+}
+
+.logo p{
+    color: rgba(0, 0, 0, 0.4);
+}

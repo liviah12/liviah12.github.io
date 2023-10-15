@@ -8,7 +8,7 @@ body{
     background-color: orangered;
     /* flex-direction: row; */
 }
-#flex-parent p{
+#flex-parent p{ 
     padding:5vw;
 }
 

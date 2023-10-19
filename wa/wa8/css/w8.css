@@ -1,0 +1,53 @@
+body{
+    font-family: 'Antic Didone', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6A79A0;
+   
+}
+
+h1{
+    color: #323434;
+}
+
+h1:hover{
+    color: #FFDF99;
+    
+}
+
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: #444545;
+   
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color: lightgray
+}
+
+
+img{
+    width:20vw;
+    transition: width 2s;
+}
+
+img:hover{
+    width: 37.5vw;
+}
+
+#red-ball{
+    background-color: #BC69AA;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+}

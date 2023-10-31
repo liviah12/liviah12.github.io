@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class = "button-div">
+        <button type="button"> CLICK HERE</button>
+    </div>
+
+    <div id = "paragraph">
+        <p>This is a paragraph. It has some sentences. Wow, so exciting! Idk what else to write sry</p>
+    </div>
+
+
+
+    <script>
+        const button = document.querySelector("button");
+        //const press = document.getElementByID("press"); for a button with an id of press as the querySelector only selects first instance not all
+        button.addEventListener('click', updateText);
+
+        function updateText(){
+            //let name = prompt("Enter a new name"); //could use let or const here doesn't matter as you aren't changing it again
+            //button.textContent = `Player 1: ${name}`;
+            button.textContent = "YOU KNOW HOW TO CLICK A BUTTON, CONGRATS"
+        }
+
+        //const text = document.getElementByID("paragraph");
+        //text.addEventListener("mouseenter", (event) => { event.target.style.color = "purple";}, false,);
+        const test = document.getElementById("paragraph");
+        test.addEventListener(
+        "mouseenter",
+        (event) => {
+            // highlight the mouseenter target
+            event.target.style.color = "red";
+            event.target.style.fontWeight = "900";
+            
+        },
+        );
+
+        test.addEventListener(
+            "mouseleave", (event) => {
+                event.target.style.color = "black";
+                event.target.style.fontWeight = "400";
+            },
+        );
+
+
+    </script>
+</body>
+</html>

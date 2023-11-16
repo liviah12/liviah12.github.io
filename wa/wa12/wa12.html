@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wa12.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <header>Random Joke Generator</header>
+        <section class="quotes">
+          <div class="quote-text" id="js-quote-text"></div>
+          <div class="quote-text" id="js-answer-text"></div>
+        </section>
+        <section class="controls" >
+
+            <div id="myProgress">
+                <div onclick="move()" id="myBar">
+                    <!--<div id="test">Click Me</div>-->
+                    <button type="button" id="js-new-quote" class="new-quote button">
+                        Generate a new joke!
+                      </button>
+                      
+                </div>
+              </div>
+
+          
+
+          <button type="button" id="js-tweet" class="twitter button">
+            Show me the puncline!
+          </button>
+          
+          
+
+          <!-- <a class="answer button" id="js-tweet" target="_blank" rel="noreferrer">Show me the answer!</a> -->
+        </section>
+      </div>
+      <div class="little-paragraph">
+        <p>I used a Joke API and implemented a loading bar on the "generate a new joke" button (I found this on W3 schools).</p>
+      </div>
+      <script src="wa12.js"></script>
+</body>
+</html>

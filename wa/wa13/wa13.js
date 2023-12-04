@@ -69,7 +69,7 @@ then set their eligibility to false. */
 
 for (let i = 0; i<4; i++){
     if (employee[i].raiseEligible == true){
-        console.log(employee[i].firstName);
+        //console.log(employee[i].firstName);
         //update salary
         employee[i].salary = employee[i].salary * 1.10;
         employee[i].raiseEligible = false;

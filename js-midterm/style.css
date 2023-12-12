@@ -1,0 +1,30 @@
+.grid-div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;  
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.number-field{
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    height: 100px;
+}
+
+.number-wrapper{
+    text-align: center;
+}
+
+#all-done{
+    margin-top: 50px;
+    text-align: center;
+}

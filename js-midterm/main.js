@@ -49,9 +49,11 @@ function rand(val){
 }
 
 const finalNumber = document.querySelector('#final-number');
+const finalText = document.querySelector('#text');
 const btnFinal = document.querySelector('#done').addEventListener('click', finished);
 
 function finished(){
-    finalNumber.textContent = "(" + numberOne.textContent + numberTwo.textContent + numberThree.textContent + ")" + numberFour.textContent + numberFive.textContent + numberSix.textContent + "-" + numberSeven.textContent + numberEight.textContent + numberNine.textContent + numberTen.textContent;
+    finalText.textContent = "Whoops sry forgot to let you know you need to enter your number backwards!"
+    finalNumber.textContent = "(" + numberTen.textContent + numberNine.textContent + numberEight.textContent + ")" + numberSeven.textContent + numberSix.textContent + numberFive.textContent + "-" + numberFour.textContent + numberThree.textContent + numberTwo.textContent + numberOne.textContent;
 }
 

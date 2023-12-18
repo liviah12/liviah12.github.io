@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Enter your phone number below!</h1>
+<div class="outline">
     <div class="grid-div">
+        
         <div class = "number-wrapper">
             <div class = "number-field">
                 <p id="number-one"></p>
@@ -108,15 +113,31 @@
             </button>
         </div>
 
-        
+ 
     </div>
+
     <div id="all-done">
         <button type="button" id="done">
             Yes, this is my number!
         </button>
+
+        
         <p id="text"></p>
         <p id="final-number"></p>
+
+        
+
+        <div id="number-input" hidden>
+            <input type="text" id="name" name="name" maxlength="10" />
+            <button type="button" id="submit">
+                Submit
+            </button>
+            <p id="test"></p>
+        </div>
+        
     </div>
+</div>
     <script src="main.js"></script>
 </body>
 </html>
+

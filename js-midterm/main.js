@@ -45,7 +45,6 @@ const btnTen = document.querySelector('#generate-ten').addEventListener('click',
 
 function rand(val){
     val.textContent = Math.floor(Math. random()*10);
-    console.log("worked?");
 }
 
 const finalNumber = document.querySelector('#final-number');
@@ -53,7 +52,55 @@ const finalText = document.querySelector('#text');
 const btnFinal = document.querySelector('#done').addEventListener('click', finished);
 
 function finished(){
-    finalText.textContent = "Whoops sry forgot to let you know you need to enter your number backwards!"
+    if((numberOne.textContent != "") && (numberTwo.textContent != "") && (numberThree.textContent != "") && (numberFour.textContent != "") && (numberFive.textContent != "") && (numberSix.textContent != "") && (numberSeven.textContent != "") && (numberEight.textContent != "") && (numberNine.textContent != "") && (numberTen.textContent != ""))
+    {
+    finalText.textContent = "Oh no! It looks like your phone number got misinterpreted, here is the number we got. To confirm your phone number is the same as the one you entered above, please re-enter your phone number below.";
     finalNumber.textContent = "(" + numberTen.textContent + numberNine.textContent + numberEight.textContent + ")" + numberSeven.textContent + numberSix.textContent + numberFive.textContent + "-" + numberFour.textContent + numberThree.textContent + numberTwo.textContent + numberOne.textContent;
+    document.getElementById("number-input").hidden = false;
+    }
+    else
+    {
+        alert("Oops! It doesn't look like you've entered a full phone number. Please fill out the rest of your number before preceding.")
+    }
 }
+
+
+
+const submitButton = document.querySelector('#submit').addEventListener('click', submitProcess);
+
+function submitProcess(){
+    const initialInputNumber = numberOne.textContent + numberTwo.textContent + numberThree.textContent  + numberFour.textContent + numberFive.textContent + numberSix.textContent + numberSeven.textContent + numberEight.textContent + numberNine.textContent + numberTen.textContent;
+    
+    const confirmationInputNumber = document.querySelector("#name");
+    const confirmationInputNumberValue = confirmationInputNumber.value; 
+    if (initialInputNumber == confirmationInputNumberValue){
+        alert("Your input number matched the one your originally input, your number has been submitted!")
+    }
+    else{
+        alert("Looks like those numbers don't match, please try again")
+        
+    }
+    empty(numberOne);
+        empty(numberTwo);
+        empty(numberThree);
+        empty(numberFour);
+        empty(numberFive);
+        empty(numberSix);
+        empty(numberSeven);
+        empty(numberEight);
+        empty(numberNine);
+        empty(numberTen);
+        empty(finalText);
+        empty(finalNumber);
+        document.getElementById("number-input").hidden = true;
+    confirmationInputNumber.value = "";
+    
+}
+
+
+function empty(val){
+    val.textContent = "";
+}
+
+
 

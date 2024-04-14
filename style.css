@@ -1,0 +1,51 @@
+body{
+
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    
+}
+h1{
+    font-size: 5rem;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+.navbar{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+
+}
+a:link { 
+    text-decoration: none; 
+    color: gray;
+  } 
+  a:visited { 
+    text-decoration: none; 
+    color: gray;
+  } 
+  a:hover { 
+    text-decoration: none; 
+    color: lightblue;
+  } 
+  a:active { 
+    text-decoration: none; 
+    color: gray;
+  }
+  .grid {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .feature{
+    width: 92%;
+    display: block;
+  }

@@ -108,10 +108,66 @@ a:link {
   display: flex;
   align-items: center;
  }
+ .linkedin-icon{
+  margin-top: 10px;
+  text-align: center;
+ }
+svg{
+  fill: black;
+}
 
+svg:hover{
+  fill: #0288D1;
+}
  /*RESUME STYLING*/
  .resume{
   text-align: center;
   margin-top: 25px;
  }
+
+ /*INTEREST STYLING*/
+ .project-grid{
+  width: 90%;
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+ }
+ .linkgrid{
+  width: 90%;
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+ }
+ .project-img{
+  width:100%;
+  height: 50%;
+ }
+ h3{
+  text-align: center;
+  font-size: 23px;
+ }
+ .buttondiv{
+  margin-left:auto;
+  margin-right: auto;
+  width: 29%;
+  text-align: center;
+  
+ }
+ .button{
+  display:inline-block;
+  padding: 3px;
+  border: 2px solid black;
+  color: black;
+  position: relative;
+    bottom: 0;
+ }
+ 
  
